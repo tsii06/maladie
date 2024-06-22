@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+     <servlet>
+        <servlet-name>InsertPatient</servlet-name>
+        <servlet-class>controller.InsertPatient</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InsertParametrePatient</servlet-name>
+        <servlet-class>controller.InsertParametrePatient</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>ChoixPatient</servlet-name>
+        <servlet-class>controller.ChoixPatient</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Traitement</servlet-name>
+        <servlet-class>controller.Traitement</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertPatient</servlet-name>
+        <url-pattern>/InsertPatient</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsertParametrePatient</servlet-name>
+        <url-pattern>/InsertParametrePatient</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChoixPatient</servlet-name>
+        <url-pattern>/ChoixPatient</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Traitement</servlet-name>
+        <url-pattern>/Traitement</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
